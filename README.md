@@ -4,8 +4,10 @@
 
 Ejecutar primero server.rb. Luego client.rb (Se pueden ejecutar varios clientes)
 
-Desde el cliente se especifica el comando primero y luego el trabajo, separado por espacio en blanco. (perform_now nombreTrabajo)
+Desde el cliente se especifica el comando primero y luego el trabajo, separado por espacio en blanco.(perform_now nombreTrabajo)
+
 Uno de los trabajos tiene parametros, tambien se separan por espacios (perform_now nombreTrabajo param1 param2)
+
 En el caso de perform_in, se especifica el tiempo de la misma manera que los parametros (perform_in tiempo nombreTrabajo)
 
 ### Trabajos:

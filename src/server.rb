@@ -22,9 +22,9 @@ class Server
         puts "Server listening..."
         loop do
             Thread.start(@socket.accept){ |client|
-
+                begin
+                Thread.current.abort_on_exception = true                              
                 clientControl = ClientController.new(@serverWorker)
-
                 loop do
                     request = client.gets.chomp
                     if(request == "exit")
@@ -33,9 +33,11 @@ class Server
                         client.puts clientControl.HandleRequest(request)
                     end
                 end
-
                 client.close
-            }
+                rescue
+                    puts "Client disconnected"
+                end
+            }            
         end
     end
 

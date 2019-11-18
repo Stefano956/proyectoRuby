@@ -2,7 +2,7 @@
 
 # Funcionamiento:
 
-Ejecutar primero server.rb. Luego client.rb (Se pueden ejecutar varios clientes)
+Ejecutar primero executeServer.rb. Luego executeClient.rb (Se pueden ejecutar varios clientes)
 
 Desde el cliente se especifica el comando primero y luego el trabajo, separado por espacio en blanco.(perform_now nombreTrabajo)
 
@@ -24,7 +24,10 @@ perform_in: Se agrega a la Queue despues del tiempo especificado, retorna al cli
 
 # Archivos:
 ### server.rb
-Es el servidor, al ejecutar por consola se inicia en 'localhost 2345'
+Es el servidor y clases relacionadas, al ejecutar por consola se inicia en 'localhost 2345'
+
+### server_spec.rb
+Es el test para todas las clases en server.rb con RSpec
 
 ### client.rb
 Simula un cliente. Ejecutar luego del servidor.

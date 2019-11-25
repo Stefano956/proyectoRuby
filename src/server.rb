@@ -1,6 +1,8 @@
 require 'socket'
 load 'jobs.rb'
 
+#Commited to GITHUB
+
 class Server
 
     attr_reader :host

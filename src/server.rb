@@ -1,8 +1,6 @@
 require 'socket'
 load 'jobs.rb'
 
-#Commited to GITHUB
-
 class Server
 
     attr_reader :host
@@ -20,6 +18,7 @@ class Server
         @serverWorker.Process_Queue()
     end
 
+    #Commited again to GitHub
     def Listen()
         puts "Server listening..."
         loop do
